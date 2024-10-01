@@ -20,4 +20,4 @@ O presente trabalho tem como objetivo a criação de um site para uma Organizaç
 <br><br>
 
 ## Entrega do Figma
-<a href="https://www.figma.com/proto/3psnZei7MMGqPwdgXq9YI6/Site-1.0.4?node-id=0-1&t=LTPmntgcVcmVtrVn-1"></a>
+<a href="https://www.figma.com/proto/3psnZei7MMGqPwdgXq9YI6/Site-1.0.4?node-id=0-1&t=LTPmntgcVcmVtrVn-1">Figma</a>
