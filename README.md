@@ -18,3 +18,6 @@ Projeto 5
 ## Descrição
 O presente trabalho tem como objetivo a criação de um site para uma Organização Não Governamental (ONG), alinhado aos princípios da Agenda 2030 da ONU, especificamente voltado para o Objetivo de Desenvolvimento Sustentável (ODS) 10, que visa a redução das desigualdades. A plataforma será desenvolvida para promover a inclusão social, oferecendo maior visibilidade às ações da ONG e facilitando o acesso a informações sobre projetos, campanhas e formas de doação. Além disso, o site servirá como um canal de comunicação eficaz entre a organização e a comunidade, com foco em fortalecer o apoio às populações mais vulneráveis e em risco de exclusão social. Desta forma, o projeto contribui diretamente para o combate às desigualdades, fornecendo ferramentas digitais que ampliam o impacto das atividades da ONG e engajam a sociedade em torno de uma causa global. 
 <br><br>
+
+## Entrega do Figma
+<a href="https://www.figma.com/proto/3psnZei7MMGqPwdgXq9YI6/Site-1.0.4?node-id=0-1&t=LTPmntgcVcmVtrVn-1"></a>
