@@ -34,13 +34,13 @@ MySQL é o banco de dados utilizado.<br><br>
 |<br>
 |-->Documentos<br>
   &emsp;|-->Entrega 1 e Entrega 2<br>
-  &emsp;|-->BD/Cálculo2<br>
-  &emsp;|-->Banco de dados CCOMP2 - Grupo 5.pdf/Cálculo2 CCOMP2 - Grupo 5.pdf<br>
+    &emsp;|-->BD/Cálculo2<br>
+      &emsp;|-->Banco de dados CCOMP2 - Grupo 5.pdf/Cálculo2 CCOMP2 - Grupo 5.pdf<br>
 
 |-->src<br>
   &emsp;|-->Backend<br>
   &emsp;|-->Frontend<br>
-  &emsp;|-->React/HTML
+    &emsp;|-->React/HTML
   
 |readme.md<br>
 
