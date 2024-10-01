@@ -22,6 +22,9 @@ O presente trabalho tem como objetivo a criação de um site para uma Organizaç
 ## FIGMA
 <a href="https://www.figma.com/proto/3psnZei7MMGqPwdgXq9YI6/Site-1.0.4?node-id=0-1&t=LTPmntgcVcmVtrVn-1">Figma</a>
 
+## Planner
+<a href="https://planner.cloud.microsoft/edu.fecap.br/pt-BR/Home/Planner/#/plantaskboard?groupId=28e3e7c3-fbbc-4cc9-945f-f5c358e0eae4&planId=5yyucgAm7kOpU7lAX0ofUGQAHCIy">Planner</a>
+
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
