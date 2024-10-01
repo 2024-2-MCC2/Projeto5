@@ -25,6 +25,9 @@ O presente trabalho tem como objetivo a criação de um site para uma Organizaç
 ## Planner
 <a href="https://planner.cloud.microsoft/edu.fecap.br/pt-BR/Home/Planner/#/plantaskboard?groupId=28e3e7c3-fbbc-4cc9-945f-f5c358e0eae4&planId=5yyucgAm7kOpU7lAX0ofUGQAHCIy">Planner</a>
 
+## Banco de Dados
+MySQL é o banco de dados utilizado<br><br>
+
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
