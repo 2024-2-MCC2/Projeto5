@@ -2,26 +2,27 @@ import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
+const ButtonLink = styled(Link)`
+    text-decoration: none;
+`
 
 const FooterContainer = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #ed9b13; 
-    text-align: center;
-    justify-content: center;
     align-items: center;
     color: #1F1F1F;
     text-shadow: 1px 1.2px rgba(0, 0, 0, 0.3);
 `
 const FormContainer = styled.form`
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 6em;
     margin: 15px 50px;
 `
 
 const Buttons = styled.button`
     border: 2px solid #fff;
-    background: #fff;
     border-radius: 30px;
     border-width: 2.5px;
     margin: 30px auto;
@@ -31,6 +32,7 @@ const Buttons = styled.button`
     color: #1f1f1f;
     font-weight: bold;
     font-size: 30px;
+
     
     &:hover{
     cursor: pointer;
@@ -40,8 +42,6 @@ const Buttons = styled.button`
     }
 `
 const Agora = styled.p`
-    display: flex;
-    justify-content:center;
     margin-top: 30px;
     padding: auto;
     color: #1f1f1f;
@@ -50,10 +50,7 @@ const Agora = styled.p`
     text-shadow: 1px 1.2px rgba(0, 0, 0, 0.3);
 `
 const Apoie = styled.p`
-    display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     color: #1f1f1f;
     text-shadow: 1px 1.2px rgba(0, 0, 0, 0.3);
     margin: 35px 0;
@@ -68,14 +65,14 @@ function Footer(){
             <FooterContainer>
                 <Agora>E AGORA? </Agora>
                 <Apoie>Apoie Nossa Missão</Apoie>
-                    <FormContainer>
-                        <Link to="/doar">
-                            <Buttons>Doação</Buttons>
-                        </Link>
-                        <Link to="/junte-se">
-                            <Buttons>Voluntariado</Buttons>
-                        </Link>
-                    </FormContainer>
+                <FormContainer>
+                    <ButtonLink to="/doar">
+                        <Buttons>Doação</Buttons>
+                    </ButtonLink>
+                    <ButtonLink to="/junte-se">
+                        <Buttons>Voluntariado</Buttons>
+                    </ButtonLink>
+                </FormContainer>
             </FooterContainer>
         </div>
     )

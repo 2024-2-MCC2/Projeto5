@@ -1,13 +1,12 @@
-import Header from '../Components/Header'
+import Header from '../Components/HeaderWithout'
 import Footer from '../Components/Footer';
 
-function Contato(){
+function Sobre(){
     return(
         <div>
             <Header/>
-            
             <Footer/>
         </div>
     )
 }
-export default Contato;
+export default Sobre;

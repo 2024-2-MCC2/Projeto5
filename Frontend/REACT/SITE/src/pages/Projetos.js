@@ -1,7 +1,7 @@
-import Header from '../Components/Header'
+import Header from '../Components/HeaderWithout'
 import Footer from '../Components/Footer';
 
-function Doar(){
+function Projeto(){
     return(
         <div>
             <Header/>
@@ -9,4 +9,4 @@ function Doar(){
         </div>
     )
 }
-export default Doar;
+export default Projeto;

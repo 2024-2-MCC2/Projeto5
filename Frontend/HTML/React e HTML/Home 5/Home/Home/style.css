@@ -1,0 +1,317 @@
+:root{
+    --laranja: #ED9B13;
+    --preto: #1f1f1f;
+    --branco: #fff;
+    --verde: #2e3b30;
+    --cinzaclaro: #f5f5f5;
+}
+
+/* GRID */
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0.6fr 0.4fr 0.5fr;
+    grid-template-areas: "h h h h"
+                         "m m m m"
+                         "ar ar ar ar"
+                         "f f f f";
+    max-width: 100%;
+    gap: 0.3em;
+    margin: 0 auto;  
+    background-color: gray  ;
+}
+
+header{grid-area: h;}
+.main-container{grid-area: m;}
+.article-container{grid-area: ar;}
+.footer-container{grid-area: f;}
+
+
+/* Inicio Header */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1em 5em;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 0.5em 5em;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    
+    display: flex;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    align-items: center; 
+}
+
+.menu-items li{
+    position: relative;
+}
+
+.menu-items li::after{
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute; /* Permite posicionar o underline */
+    left: 0;
+    bottom: -1px; 
+    width: 100%;
+    height: 2px; 
+    background-color: var(--preto); 
+    transform: scaleX(0);
+    transform-origin: center; 
+    transition: transform 0.35s ease; 
+}
+.menu-items li:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Fim Header */
+
+/* Começo do Main */
+
+/*  */
+.imagem-logo{
+    width: 1200px;
+    height: 519px;
+    opacity: 50%;
+}
+
+.section1, .section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    height: 300px;
+    font-size: 20px;
+    padding: 0 4em;
+    background-color: var(--laranja);
+    color: var(--branco);
+    text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+}
+.section1 h1, .section3 h1{
+    font-size: 40px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    height: 300px;
+    font-size: 20px;
+    padding: 0 4em;
+    background-color: var(--branco);
+    color: var(--preto);
+    text-shadow: 1px 1.15px rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+}
+
+.section2 h1{
+    font-size: 40px;
+    color: var(--laranja);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Fim do Main */
+
+/* Começo Article */
+
+/* Projetos */
+.projects{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+}
+
+.article-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold
+
+}
+
+figcaption{
+    color: var(--preto);
+    position: relative;
+}
+
+figcaption::after{
+    content: ''; 
+    position: absolute; 
+    left: 0;
+    bottom: -1px; 
+    width: 100%;
+    height: 2px; 
+    background-color: var(--preto); 
+    transform: scaleX(0);
+    transform-origin: center; 
+    transition: transform 0.35s ease; 
+}
+
+figcaption:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.pb, .db, .vb{
+    display: inline-flex;
+    justify-content: center;
+    margin: 15px 50px;
+}
+
+.project-button{
+    color: var(--preto);
+    border: 2px solid var(--preto);
+    background: none;
+    border-radius: 30px;
+    border-width: 2.5px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px auto;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-button:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-2px);
+}
+
+
+.imagem-projetoSamuel, .imagem-projetoFuturo{
+    width: 550px;
+    height: 367px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.menu-items li{
+    margin-left: 15px;
+    position: relative;
+}
+
+/* Fim Projetos */
+
+/* Textos */
+
+.article-text{
+    background-color: var(--cinzaclaro); 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+.article-text h1{
+    font-size: 35px;
+    color: var(--preto);
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.article-text h2{
+    font-size: 30px;
+    color: var(--laranja);
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.article-text p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 20px;
+    color: var(--preto);
+    text-shadow: 1px 1.15px rgba(0, 0, 0, 0.3);
+}
+/* Fim do Texto */
+/* Incio Footer */
+  
+.footer-container{
+    display: flex;
+    background-color: var(--laranja); 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--preto);
+    text-shadow: 1px 1.2px rgba(0, 0, 0, 0.3);
+    margin: 35px 0;
+}
+
+.agora{
+    margin-top: 30px;
+    padding: auto;
+    color: var(--preto);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1.2px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container h2{
+    font-size: 50px;
+    color: var(--branco);
+    text-align: center;
+
+}
+  
+.donate-button, .volunteer-button {
+    border: 2px solid var(--branco);
+    background: var(--branco);
+    border-radius: 30px;
+    border-width: 2.5px;
+    margin: 30px auto;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+  
+.donate-button:hover, .volunteer-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-2px); 
+}
+
+  
+
+  
+
+

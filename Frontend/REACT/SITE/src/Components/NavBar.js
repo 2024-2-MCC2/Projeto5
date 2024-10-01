@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 
 
-const NavBarContainer = styled.nav`
+const NavBarContainer = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,19 +22,19 @@ const Menu = styled(Link)`
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
-  
 
   &::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px;
     width: 100%;
     height: 2px;
     background-color: #1f1f1f; /* Use uma cor padrão */
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.35s ease;
+    top: 30px;
+
   }
 
   &:hover::after {
@@ -43,6 +43,7 @@ const Menu = styled(Link)`
   }
 
 `
+
 
 
 function NavBar(){
