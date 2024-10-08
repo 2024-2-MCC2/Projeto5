@@ -1,12 +1,8 @@
 import React from "react";
-
+import styled from "styled-components"
 
 
 //SÓ NAO SABIA CRIAR VARIAVEIS PARA CORES
-
-const ButtonLink = styled(Link)`
-    text-decoration: none;
-`
 
 const MainContainer13 = styled.main`
     display: flex;
@@ -49,39 +45,9 @@ const TitulosContainer2 = styled.h1`
     color: #ED9B13;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 `
-const Image = styled.img`
-    width: 550px;
-    height: 367px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-`
 
-const FormContainer = styled.form`
-    display: flex;
-    justify-content: space-evenly;
-    margin: 15px 50px;
-`
 
-const VerProjetos = styled.button`
 
-    display: flex;
-    border: 2px solid #1f1f1f;
-    border-radius: 30px;
-    margin: 30px auto;
-    padding: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #1f1f1f;
-    font-weight: bold;
-    font-size: 30px;
-    
-    &:hover{
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
-    transform: translateY(-2px);
-    }
-`
 
 
 function Main() {
@@ -102,14 +68,7 @@ function Main() {
                 Contribuir como agentes transformadores na educação, sociabilizando e vínculos interpessoais e familiares, de crianças, jovens e adultos, pautados em princípios e valores cristãos, no acesso e informações de direito, gerando inclusão social, o despertar de potenciais e autonomia.
             </MainContainer13>
             
-            <FormContainer>
-                <Image src={GeracaoFuturo} alt="Geração Futuro"/>
-                <Image src={GeracaoSamuel} alt="Geração Samuel"/>
-            </FormContainer>
             
-            <ButtonLink to="/projetos">
-                <VerProjetos>VER OS PROJETOS</VerProjetos>
-            </ButtonLink>
 
         
         </div>
