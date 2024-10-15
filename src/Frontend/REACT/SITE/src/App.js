@@ -6,6 +6,7 @@ import Projetos from "./pages/Projetos"
 import Doar from "./pages/Doar"
 import Juntar from "./pages/Juntar"
 import Contato from "./pages/Contato"
+import ProjetosDesc from "./pages/ProjetosDesc"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/doar' element = {<Doar/>}/>
           <Route path='/junte-se' element = {<Juntar/>}/>
           <Route path='/contato' element = {<Contato/>}/>
+          <Route path='/projeto/:id' element = {<ProjetosDesc/>}/>
         </Routes>
       </Router>
     </div>

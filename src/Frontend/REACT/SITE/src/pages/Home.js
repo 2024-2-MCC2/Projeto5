@@ -3,7 +3,7 @@ import Main from '../Components/Main';
 import ArticleInformations from '../Components/ArticleInformations';
 import Logo from '../Components/Logo';
 import Footer from '../Components/Footer';
-import ProjectImage from '../Components/ProjectImage';
+import ProjectImageHome from '../Components/ProjectImageHome';
 import GeracaoSamuel from '../Assets/imagem_02.png'
 import GeracaoFuturo from '../Assets/imagem_01.png'
 
@@ -13,7 +13,7 @@ function Home(){
             <Header/>
             <Logo/>
             <Main/>
-            <ProjectImage
+            <ProjectImageHome
                 images={[
                     {src: GeracaoFuturo, alt:"Imagem do projeto Geração Futuro", text: "GERAÇÃO FUTURO"},
                     {src: GeracaoSamuel, alt:"Imagem do projeto Geração Samuel", text: "GERAÇÃO SAMUEL"},

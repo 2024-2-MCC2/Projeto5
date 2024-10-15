@@ -2,17 +2,89 @@ import styled from "styled-components"
 
 
 const MainTitle = styled.h2`
-text-align: center;
-margin: 20px 0 0 0;
+  text-align:center;
+  font-weight: 700;
+  font-size: 70px;
+  color: #ED9B13;
+  background-color: #fff;
+  padding: 50px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 1px #AC7923,
+    1px 2px 1px #AC7923,
+    1px 3px 1px #AC7923,
+    1px 4px 1px #AC7923,
+    1px 5px 1px #AC7923,
+    1px 6px 1px #AC7923,
+    1px 7px 1px #AC7923,
+    1px 8px 1px #AC7923,
+    1px 9px 1px #AC7923,
+    1px 10px 1px #AC7923,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
 `
 
 const HistoriaContainer1 = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 500px;
+  font-size: 20px;
+  padding: 0 4em;
+  color: #fff;
+  text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  background-color: #ED9B13;
+  margin: 0px;
 `
 const HistoriaContainer2 = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 300px;
+  font-size: 20px;
+  padding: 0 4em;
+  color: #1f1f1f;
+  text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  background-color: #fff;
+  margin: 0px;
 `
 const HistoriaContainer3 = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 300px;
+  font-size: 20px;
+  padding: 0 4em;
+  color: #fff;
+  text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  background-color: #ED9B13;
+  margin: 0px;
 `
 const HistoriaContainer4 = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  height: 300px;
+  font-size: 20px;
+  padding: 0 4em;
+  color: #1f1f1f;
+  text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  background-color: #fff;
+  margin: 0px;
 `
 function NossaHistoria() {
     return (

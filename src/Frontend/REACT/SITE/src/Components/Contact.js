@@ -12,10 +12,35 @@ const Contatos = styled.div`
 `;
 
 const Contatoh1 = styled.h1`
-  text-align: center;
+  /* text-align: center;
   color: #ED9B13;
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; */
+  text-align:center;
+  font-weight: 700;
+  font-size: 70px;
+    color: #ED9B13;
+    background-color: #fff;
+    padding: 50px;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* transform: translate(50%,-50%); */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #AC7923,
+        1px 2px 1px #AC7923,
+        1px 3px 1px #AC7923,
+        1px 4px 1px #AC7923,
+        1px 5px 1px #AC7923,
+        1px 6px 1px #AC7923,
+        1px 7px 1px #AC7923,
+        1px 8px 1px #AC7923,
+        1px 9px 1px #AC7923,
+        1px 10px 1px #AC7923,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
 `;
 
 const Containerform = styled.div`
@@ -31,6 +56,7 @@ const Map = styled.iframe`
   max-width: 458px;
   height: 398px;
   border: 0;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 `;
 
 const Form = styled.form`
@@ -38,7 +64,8 @@ const Form = styled.form`
   max-width: 450px;
   background-color: #ED9B13;
   padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   display: flex;
   flex-direction: column;
 `;
@@ -173,14 +200,16 @@ function Contact() {
             <SubmitButton type="submit">Enviar</SubmitButton>
           </Form>
         </Containerform>
+
+        {/* TIRAR O TITULO E ADICIONAR UM TEXTO ABAIXO DO MAPS */}
         <FormaContatoContainer>
             <SectionTextContato>
-            <TelefoneContainer>Telefone</TelefoneContainer>
+            <TelefoneContainer>Telefone:</TelefoneContainer>
             <NumeroTelefone>11 5078-0550</NumeroTelefone>
             </SectionTextContato>
 
             <SectionTextContato>
-            <EmailContainer>E-mail</EmailContainer>
+            <EmailContainer>E-mail:</EmailContainer>
             <NomeEmail>contato.ccpv@gmail.com</NomeEmail>
             </SectionTextContato>
         </FormaContatoContainer>

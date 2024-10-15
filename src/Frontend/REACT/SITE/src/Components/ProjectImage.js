@@ -1,84 +1,93 @@
-import {Link} from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import styled from "styled-components";
-import Image from "../Assets/Pattern Mao - Colorida.jpg"
+import React from "react";
+import styled from "styled-components"
 
-const BackgroundImage = styled.div`
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    background: url('${Image}');
-    background-size: 80%;
-    padding: 10px; 
-`
-
-const Container = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2em;
-    margin-bottom:50px;
-    margin-top: 20px;
-`
-
-const ImageContainer = styled.main`
-    width: 550px;
-    height: 367px;
-    margin: 0 10px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
-    background-color: #fff;
-
-    img{
-        width:100%;
-        height:100%;
-        border-radius: 5px;
-        object-fit: cover;
-    }
-`
-
-const Text = styled.p`
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #1f1f1f;
-    margin: 10px 0;
-`
-
-
-const VerProjetos = styled.button`
-    border: 2px solid #1f1f1f;
-    border-radius: 30px;
-    margin: 30px auto;
-    padding: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #1f1f1f;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
-    background-color: #fff;
+const TitleContainer = styled.h1`
+    text-align:center;
+    font-weight: 700;
+    font-size: 70px;
+    color: #fff;
+    background-color: #ED9B13;
+    padding: 50px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
     
-    &:hover{
+    /* transform: translate(50%,-50%); */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+`
+
+const PageContainer = styled.main`
+    background-color:#fff;
+    display: grid;
+    justify-content:space-around;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+`
+
+const ImageCard = styled.main`
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 40px;
+`
+
+const StyledImage = styled.img`
+    width: 520px;
+    height: 320px;
+    border-radius:10%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+`
+
+const SubTitle = styled.h2`
+    text-align: center;
+    color: #ED9B13;
+    margin: 0 0 5px 0;
+`
+
+const Button = styled.button`
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
-    transform: translateY(-2px);
+    align-self: flex-start;
+    &:hover {
+        background-color: #394c73;
     }
 `
 
-function ProjectImage({images}){
-    const navigate = useNavigate();
+
+function ProjectImage({fotos, navigate}){
     return(
-        <BackgroundImage>
-            <Container>
-            {images.map((image, index) => (
-                <ImageContainer Key={index}>
-                    <img src={image.src} alt={image.alt}/>
-                    <Text>{image.text}</Text>
-                </ImageContainer>
-            ))}
-            </Container>
-            <VerProjetos onClick={() => navigate("/projetos")}>VER OS PROJETOS</VerProjetos>
-        </BackgroundImage>        
+        <> 
+            <TitleContainer>Nossos Projetos Sociais</TitleContainer>
+            <PageContainer>
+                {fotos.map((foto, index) =>(
+                    <ImageCard key={index}>
+                        <StyledImage src={foto.src} alt={foto.alt}/>
+                        <SubTitle>{foto.title}</SubTitle>
+                        <Button onClick={() => navigate(`/projeto/${foto.id}`)}>Saiba Mais</Button>
+                        {/* <Description>{foto.description}</Description> */}
+                    </ImageCard>
+                ))}
+            </PageContainer>
+        </>
     )
 }
 
