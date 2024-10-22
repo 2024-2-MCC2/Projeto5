@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components"
 import imagem from '../Assets/ProjetoNemias.png'
 
-//SÓ NAO SABIA CRIAR VARIAVEIS PARA CORES
-
-
 const MainContainer1 = styled.main`
     display: flex;
     flex-direction: column;
@@ -22,35 +19,17 @@ const Container1 = styled.div`
     flex-grow:1;
     background-color:#eff1f3;
 `
-const MainContainer2 = styled.main`
+
+const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
-    justify-content: center;
-    height: 300px;
-    font-size: 20px;
-    padding: 0 4em;
+    padding: 5px 10px;
     background-color: #fff;
-    color: #1f1f1f;
-    text-shadow: 1px 1.15px rgba(0, 0, 0, 0.3);
-    font-size: 25px;
-    margin: 0px;
-`
-const MainContainer3 = styled.main`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
-    text-align: justify;
-    height: 300px;
-    font-size: 20px;
-    padding: 0 4em;
-    background-color: #ED9B13;
-    color: #fff;
-    text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
-    font-size: 25px;
-    margin: 0px;
+    margin: 25px auto;
+    border-radius: 30px;
+    width: 350px;
+    height: 350px;
 `
 
 const TitulosContainer1 = styled.h1`
@@ -58,25 +37,49 @@ const TitulosContainer1 = styled.h1`
     /* text-shadow: 2px 2px rgba(0, 0, 0, 0.5); */
     color: #ED9B13;
 `
-
-const TitulosContainer2 = styled.h1`
-    font-size: 40px;
-    color: #ED9B13;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-`
-const TitulosContainer3 = styled.h1`
-    font-size: 40px;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-    color: #ED9B13;
-`
 const ImageContainer1 = styled.img`
     width:500px;
     height:426px;
     margin: 45px 90px;
     background-color:#eff1f3;
-
+`
+const TitulosContainer = styled.div`
+    font-size: 30px;
+    color: #ED9B13;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    margin-top: -10px;
+    margin: 15px 0px;
+    font-weight:bold;
+`
+const TextContainer = styled.p`
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 60px;
+    width: 260px;
+    color: #1f1f1f;
+    text-shadow: 1px 1.15px rgba(0, 0, 0, 0.3);
+    margin-top: -5px;
+    margin: 0px 22px;
+`
+const Textos = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: #eff1f3;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 60px;
+    color: #1f1f1f;
+    text-shadow: 1px 1.15px rgba(0, 0, 0, 0.3);
 `
 
+const IconsContainer = styled.h1`
+    font-size: 35px;
+    color: #1f1f1f;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+`
 
 
 function Main() {
@@ -90,19 +93,31 @@ function Main() {
             </MainContainer1>
             </Container1>
             
-            <MainContainer2>
-                <TitulosContainer2>Nossa Missão</TitulosContainer2>
+            <Textos>
+            <MainContainer>
+                <IconsContainer>Icon</IconsContainer>
+                <TitulosContainer>Missão</TitulosContainer>
+                <TextContainer>
                 Contribuir para a transformação de cidadãos, por intermédio da Educação e Ações Socioeducativas que possibilitem a apropriação de autonomia de vida.
-            </MainContainer2>
+                </TextContainer>
+            </MainContainer>
 
-            <MainContainer3>
-                <TitulosContainer3>Visão e Valores</TitulosContainer3>
-                Contribuir como agentes transformadores na educação, sociabilizando e vínculos interpessoais e familiares, de crianças, jovens e adultos, pautados em princípios e valores cristãos, no acesso e informações de direito, gerando inclusão social, o despertar de potenciais e autonomia.
-            </MainContainer3>
-            
-            
+            <MainContainer>
+                <IconsContainer>Icon</IconsContainer>
+                <TitulosContainer>Visão</TitulosContainer>
+                <TextContainer>
+                Princípios e valores cristãos, no acesso e informações de direito, gerando inclusão social, o despertar de potenciais e autonomia.
+                </TextContainer>
+            </MainContainer>
 
-        
+            <MainContainer>
+                <IconsContainer>Icon</IconsContainer>
+                <TitulosContainer>Valores</TitulosContainer>
+                <TextContainer>
+                Contribuir como agentes transformadores na educação, sociabilizando e vínculos interpessoais e familiares, de crianças, jovens e adultos.
+                </TextContainer>
+            </MainContainer>
+            </Textos>
         </div>
     )
 }

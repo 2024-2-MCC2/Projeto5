@@ -13,20 +13,7 @@ const TitleContainer = styled.h1`
     
     /* transform: translate(50%,-50%); */
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px #919191,
-        1px 2px 1px #919191,
-        1px 3px 1px #919191,
-        1px 4px 1px #919191,
-        1px 5px 1px #919191,
-        1px 6px 1px #919191,
-        1px 7px 1px #919191,
-        1px 8px 1px #919191,
-        1px 9px 1px #919191,
-        1px 10px 1px #919191,
-    1px 18px 6px rgba(16,16,16,0.4),
-    1px 22px 10px rgba(16,16,16,0.2),
-    1px 25px 35px rgba(16,16,16,0.2),
-    1px 30px 60px rgba(16,16,16,0.4);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 `
 
 const PageContainer = styled.main`
@@ -60,15 +47,21 @@ const SubTitle = styled.h2`
 `
 
 const Button = styled.button`
+    display: flex;
+    align-items: center;
     padding: 10px 20px;
+    margin-top: 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     background-color: #007BFF;
     color: white;
+    transition: all 0.3s ease;
     cursor: pointer;
-    align-self: flex-start;
     &:hover {
         background-color: #394c73;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+        transform: translateY(-2px);
     }
 `
 

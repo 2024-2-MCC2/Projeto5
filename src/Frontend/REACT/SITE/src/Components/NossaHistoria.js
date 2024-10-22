@@ -9,21 +9,7 @@ const MainTitle = styled.h2`
   background-color: #fff;
   padding: 50px;
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 1px 1px 1px #AC7923,
-    1px 2px 1px #AC7923,
-    1px 3px 1px #AC7923,
-    1px 4px 1px #AC7923,
-    1px 5px 1px #AC7923,
-    1px 6px 1px #AC7923,
-    1px 7px 1px #AC7923,
-    1px 8px 1px #AC7923,
-    1px 9px 1px #AC7923,
-    1px 10px 1px #AC7923,
-    1px 18px 6px rgba(16,16,16,0.4),
-    1px 22px 10px rgba(16,16,16,0.2),
-    1px 25px 35px rgba(16,16,16,0.2),
-    1px 30px 60px rgba(16,16,16,0.4);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 `
 
 const HistoriaContainer1 = styled.p`
@@ -89,7 +75,7 @@ const HistoriaContainer4 = styled.p`
 function NossaHistoria() {
     return (
         <div>
-          <MainTitle>Nossa História</MainTitle>
+          <MainTitle>NOSSA HISTÓRIA</MainTitle>
           <HistoriaContainer1>
             O Projeto Neemias teve início em 2005, dentro da Igreja Comunhão Cristã, onde seus frequentadores, 
             na maioria, viviam em uma situação de risco social. Com o tempo, as necessidades foram aumentando e 

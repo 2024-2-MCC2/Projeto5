@@ -1,53 +1,30 @@
-import React from 'react'; 
-import styled from 'styled-components'; 
-import { MdOutlineEmail } from "react-icons/md"; 
-import { SiMinutemailer } from "react-icons/si"; 
+import React from 'react';
+import styled from 'styled-components';
+import { MdOutlineEmail } from "react-icons/md";
+import { SiMinutemailer } from "react-icons/si";
 import { IoMdPerson } from "react-icons/io";
 
 
 const Contatos = styled.div`    
   padding: 1.5rem;
-  margin-top: 50px;
   background-color: #fff;
 `;
 
 const Contatoh1 = styled.h1`
-  /* text-align: center;
-  color: #ED9B13;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem; */
   text-align:center;
   font-weight: 700;
   font-size: 70px;
-    color: #ED9B13;
-    background-color: #fff;
-    padding: 50px;
-    margin-top: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    /* transform: translate(50%,-50%); */
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px #AC7923,
-        1px 2px 1px #AC7923,
-        1px 3px 1px #AC7923,
-        1px 4px 1px #AC7923,
-        1px 5px 1px #AC7923,
-        1px 6px 1px #AC7923,
-        1px 7px 1px #AC7923,
-        1px 8px 1px #AC7923,
-        1px 9px 1px #AC7923,
-        1px 10px 1px #AC7923,
-    1px 18px 6px rgba(16,16,16,0.4),
-    1px 22px 10px rgba(16,16,16,0.2),
-    1px 25px 35px rgba(16,16,16,0.2),
-    1px 30px 60px rgba(16,16,16,0.4);
+  color: #ED9B13;
+  padding: 50px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 `;
 
 const Containerform = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* gap: 2rem; */
   margin-bottom: 20px;
 `;
 
@@ -64,7 +41,6 @@ const Form = styled.form`
   max-width: 450px;
   background-color: #ED9B13;
   padding: 1.5rem;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   display: flex;
   flex-direction: column;
@@ -95,7 +71,7 @@ const InputForm = styled.div`
 const Input = styled.input`
   width: 100%;
   padding: 0.75rem;
-  background: #000;
+  background: #1f1f1f;
   border: none;
   color: #fff;
   border-radius: 5px;
@@ -120,35 +96,35 @@ const SubmitButton = styled.button`
   margin-top: 1rem;
   transition: background-color 0.3s ease;
 
-  // Altera a cor de fundo quando o botão é focado ou clicado.
   &:hover {
     background-color: #ddd;
   }
 `;
-const FormaContatoContainer = styled.div`
-    background-color: #fff; 
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
+const FormContatoContainer = styled.div`
+  display: flex;
+  gap: 2.5em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 `
 
 const TelefoneContainer = styled.h1`
-    color: #ED9B13;
-`
-const NumeroTelefone = styled.p`
+  color: #ED9B13;
 `
 
-const EmailContainer = styled.h1`
-    color:#ED9B13;
+
+const EmailContainer = styled.a`
+  color:#ED9B13;
+  font-size: 32px;
+  font-weight: bold;
 `
 
-const NomeEmail = styled.p`
-`
+
 
 const SectionTextContato = styled.p`
-    display: flex;
-    flex-direction: column;
-    padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
 `
 // Função de manipulação de formulário
 // Impede o comportamento padrão de recarregar a página ao enviar o formulário, exibindo uma mensagem de sucesso.
@@ -157,65 +133,52 @@ function handleSubmit(event) {
   alert('Formulário enviado com sucesso!'); // Exibe uma mensagem de sucesso quando o formulário é enviado.
 }
 
-// Componente de Contato
 function Contact() {
-    return (
-      <Contatos>
-        {/* Título da seção de contato */}
-        <Contatoh1>Contato</Contatoh1>
-        
-        {/* Container que agrupa o mapa e o formulário */}
-        <Containerform>
-          {/* Mapa do Google Maps embutido na página */}
-          <Map
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6359744187903!2d-46.646216025419726!3d-23.617384863651285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a45267434d7%3A0x92f3ff71cf19356f!2sAv.%20Jos%C3%A9%20Maria%20Whitaker%2C%202000%20-%20Planalto%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004057-000!5e0!3m2!1spt-BR!2sbr!4v1727788289544!5m2!1spt-BR!2sbr"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-  
-          {/* Formulário de contato */}
-          <Form onSubmit={handleSubmit}>
-            <FormTitle>Deixe uma mensagem</FormTitle>
-  
-            {/* Campo para entrada do nome, com ícone de pessoa */}
-            <InputForm>
-              <IoMdPerson />
-              <Input type="text" name="name" placeholder="Nome" required />
-            </InputForm>
-  
-            {/* Campo para entrada de e-mail, com ícone de e-mail */}
-            <InputForm>
-              <MdOutlineEmail />
-              <Input type="email" name="email" placeholder="E-mail" required />
-            </InputForm>
-  
-            {/* Área de texto para mensagem, com ícone de mensagem */}
-            <InputForm>
-              <SiMinutemailer />
-              <Input name="message" placeholder="Mensagem" required />
-            </InputForm>
-  
-            {/* Botão para enviar o formulário */}
-            <SubmitButton type="submit">Enviar</SubmitButton>
-          </Form>
-        </Containerform>
+  return (
+    <Contatos>
+      <Contatoh1>Contato</Contatoh1>
 
-        {/* TIRAR O TITULO E ADICIONAR UM TEXTO ABAIXO DO MAPS */}
-        <FormaContatoContainer>
-            <SectionTextContato>
-            <TelefoneContainer>Telefone:</TelefoneContainer>
-            <NumeroTelefone>11 5078-0550</NumeroTelefone>
-            </SectionTextContato>
+      <Containerform>
+        <Map
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.6359744187903!2d-46.646216025419726!3d-23.617384863651285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a45267434d7%3A0x92f3ff71cf19356f!2sAv.%20Jos%C3%A9%20Maria%20Whitaker%2C%202000%20-%20Planalto%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004057-000!5e0!3m2!1spt-BR!2sbr!4v1727788289544!5m2!1spt-BR!2sbr"
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
 
-            <SectionTextContato>
-            <EmailContainer>E-mail:</EmailContainer>
-            <NomeEmail>contato.ccpv@gmail.com</NomeEmail>
-            </SectionTextContato>
-        </FormaContatoContainer>
-      </Contatos>
-    );
-  }
-  
-  export default Contact; // Exporta o componente para ser usado em outras partes do projeto.
-  
+        <Form onSubmit={handleSubmit}>
+          <FormTitle>Deixe uma mensagem</FormTitle>
+
+          <InputForm>
+            <IoMdPerson />
+            <Input type="text" name="name" placeholder="Nome" required />
+          </InputForm>
+
+          <InputForm>
+            <MdOutlineEmail />
+            <Input type="email" name="email" placeholder="E-mail" required />
+          </InputForm>
+
+          <InputForm>
+            <SiMinutemailer />
+            <Input name="message" placeholder="Mensagem" required />
+          </InputForm>
+
+          <SubmitButton type="submit">Enviar</SubmitButton>
+        </Form>
+      </Containerform>
+
+      <FormContatoContainer>
+        <SectionTextContato>
+          <TelefoneContainer>Telefone: +55 (11) 5078-0550</TelefoneContainer>
+        </SectionTextContato>
+
+        <SectionTextContato>
+          <EmailContainer href="mailto:contato.ccpv@gmail.com">E-mail: contato.ccpv@gmail.com</EmailContainer>
+        </SectionTextContato>
+      </FormContatoContainer>
+    </Contatos>
+  );
+}
+
+export default Contact;

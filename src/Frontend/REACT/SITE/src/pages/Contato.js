@@ -4,11 +4,11 @@ import Contact from '../Components/Contact';
 
 function Contato(){
     return(
-        <div>
+        <>
             <Header/>
             <Contact/>
             <Footer/>
-        </div>
+        </>
     )
 }
 export default Contato;
