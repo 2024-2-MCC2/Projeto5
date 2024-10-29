@@ -33,10 +33,10 @@ MySQL é o banco de dados utilizado.<br><br>
 -Raiz<br>
 |<br>
 |-->Documentos<br>
-  &emsp;|-->Entrega 1
-  &emsp;|-->Entrega 2
-  &emsp;|-->Entrega 3
-  &emsp;|-->Entrega 4
+  &emsp;|-->Entrega 1<br>
+  &emsp;|-->Entrega 2<br>
+  &emsp;|-->Entrega 3<br>
+  &emsp;|-->Entrega 4<br>
   
 |-->src<br>
   &emsp;|-->Backend<br>
