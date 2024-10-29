@@ -34,9 +34,13 @@ MySQL é o banco de dados utilizado.<br><br>
 |<br>
 |-->Documentos<br>
   &emsp;|-->Entrega 1
+
   &emsp;|-->Entrega 2
+  
   &emsp;|-->Entrega 3
+  
   &emsp;|-->Entrega 4
+  
 |-->src<br>
   &emsp;|-->Backend<br>
   &emsp;|-->Frontend<br>
