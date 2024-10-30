@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components"
 
 const TitleContainer = styled.h1`
-    text-align:center;
-    font-weight: 700;
-    font-size: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
     color: #fff;
     background-color: #ED9B13;
-    padding: 50px;
+    padding: 40px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    height: 35px;    
     /* transform: translate(50%,-50%); */
     text-transform: uppercase;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.5);

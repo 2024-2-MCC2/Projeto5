@@ -6,6 +6,7 @@ import Footer from '../Components/Footer';
 import ProjectImageHome from '../Components/ProjectImageHome';
 import GeracaoSamuel from '../Assets/imagem_02.png'
 import GeracaoFuturo from '../Assets/imagem_01.png'
+import FooterIcons from '../Components/FooterIcons'
 
 function Home(){
     return(
@@ -21,6 +22,7 @@ function Home(){
             />
             <ArticleInformations/>
             <Footer/>
+            <FooterIcons/>
         </div>
     )
 }

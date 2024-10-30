@@ -10,7 +10,7 @@ const Contatos = styled.div`
   background-color: #fff;
 `;
 
-const Contatoh1 = styled.h1`
+const ContatoTitle = styled.h1`
   text-align:center;
   font-weight: 700;
   font-size: 70px;
@@ -108,8 +108,10 @@ const FormContatoContainer = styled.div`
   margin-top: 20px;
 `
 
-const TelefoneContainer = styled.h1`
+const TelefoneContainer = styled.a`
   color: #ED9B13;
+  font-size: 32px;
+  font-weight: bold;
 `
 
 
@@ -136,7 +138,7 @@ function handleSubmit(event) {
 function Contact() {
   return (
     <Contatos>
-      <Contatoh1>Contato</Contatoh1>
+      <ContatoTitle>Contato</ContatoTitle>
 
       <Containerform>
         <Map
@@ -170,7 +172,7 @@ function Contact() {
 
       <FormContatoContainer>
         <SectionTextContato>
-          <TelefoneContainer>Telefone: +55 (11) 5078-0550</TelefoneContainer>
+          <TelefoneContainer href="tel:+551150780550">Telefone: +55 (11) 5078-0550</TelefoneContainer>
         </SectionTextContato>
 
         <SectionTextContato>

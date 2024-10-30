@@ -32,6 +32,7 @@ const Buttons = styled.button`
     color: #1f1f1f;
     font-weight: bold;
     font-size: 30px;
+    background-color: #fff;
 
     
     &:hover{

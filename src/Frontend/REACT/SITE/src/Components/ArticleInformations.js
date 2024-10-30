@@ -5,6 +5,7 @@ const ArticleText = styled.article`
     display: flex;
     justify-content: space-evenly;
     margin: auto;
+    max-width:1300px;
 `
 
 const SectionText = styled.section`

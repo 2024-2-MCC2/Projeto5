@@ -1,18 +1,22 @@
 import React from "react";
 import styled from "styled-components"
 import imagem from '../Assets/ProjetoNemias.png'
+import { FaEye } from "react-icons/fa";
+import { MdRocketLaunch } from "react-icons/md";
+import { BsFillPatchCheckFill } from "react-icons/bs";
+
+
 
 const MainContainer1 = styled.main`
     display: flex;
     flex-direction: column;
-    flex-grow:1;
     justify-content: center;
     font-size: 20px;
     padding: 0 3em;
-    background-color: #eff1f3; 
     color: #1f1f1f;
     text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
     font-size: 25px;
+    text-align: justify;
 `
 const Container1 = styled.div`
     display:flex;
@@ -95,7 +99,7 @@ function Main() {
             
             <Textos>
             <MainContainer>
-                <IconsContainer>Icon</IconsContainer>
+                <IconsContainer><MdRocketLaunch/></IconsContainer>
                 <TitulosContainer>Missão</TitulosContainer>
                 <TextContainer>
                 Contribuir para a transformação de cidadãos, por intermédio da Educação e Ações Socioeducativas que possibilitem a apropriação de autonomia de vida.
@@ -103,7 +107,8 @@ function Main() {
             </MainContainer>
 
             <MainContainer>
-                <IconsContainer>Icon</IconsContainer>
+                <IconsContainer><FaEye/></IconsContainer>
+
                 <TitulosContainer>Visão</TitulosContainer>
                 <TextContainer>
                 Princípios e valores cristãos, no acesso e informações de direito, gerando inclusão social, o despertar de potenciais e autonomia.
@@ -111,7 +116,7 @@ function Main() {
             </MainContainer>
 
             <MainContainer>
-                <IconsContainer>Icon</IconsContainer>
+                <IconsContainer><BsFillPatchCheckFill/></IconsContainer>
                 <TitulosContainer>Valores</TitulosContainer>
                 <TextContainer>
                 Contribuir como agentes transformadores na educação, sociabilizando e vínculos interpessoais e familiares, de crianças, jovens e adultos.

@@ -1,6 +1,13 @@
 import styled from "styled-components"
+import imagem from "../Assets/Nossa Historia.png"
 
-
+const Imagem = styled.img`
+  width: auto;
+  height: auto; 
+  margin: auto;
+  display: flex;
+  justify-content: center;
+`
 const MainTitle = styled.h2`
   text-align:center;
   font-weight: 700;
@@ -75,6 +82,8 @@ const HistoriaContainer4 = styled.p`
 function NossaHistoria() {
     return (
         <div>
+          <Imagem src={imagem}></Imagem>
+{/*           
           <MainTitle>NOSSA HISTÓRIA</MainTitle>
           <HistoriaContainer1>
             O Projeto Neemias teve início em 2005, dentro da Igreja Comunhão Cristã, onde seus frequentadores, 
@@ -98,7 +107,7 @@ function NossaHistoria() {
           <HistoriaContainer4>
             Hoje a organização atende mais de 1.000 pessoas por dia, proporcionando às crianças a oportunidade de serem transformadas e voltarem 
             à sua família de origem com dignidade e cuidados, independente da situação de vulnerabilidade em que viviam.
-          </HistoriaContainer4>
+          </HistoriaContainer4> */}
         </div>
     )
 }
