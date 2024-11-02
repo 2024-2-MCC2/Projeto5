@@ -5,12 +5,12 @@ const TitleContainer = styled.h1`
     align-items:center;
     justify-content: center;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 45px;
     color: #fff;
     background-color: #ED9B13;
-    padding: 50px;
+    padding: 45px;
     margin: 0px;
-    height: 40px;
+    height: 10px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 `
 
@@ -32,14 +32,14 @@ const ImageCard = styled.main`
 `
 
 const StyledImage = styled.img`
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-bottom: 20px;
-border-radius: 100%;
-padding-top: 20px;
-height: 200px;
-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
 `
 
 const SubTitle = styled.h2`
@@ -54,7 +54,7 @@ const Description = styled.h3`
     color: #ED9B13;
     margin: 0 0 5px 0;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
 `
 
 function Fundadores({FundFotos}){

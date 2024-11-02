@@ -5,23 +5,37 @@ import { FaEye } from "react-icons/fa";
 import { MdRocketLaunch } from "react-icons/md";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 
+const Container = styled.div`
+    background-color:#eff1f3;
 
+`
 
 const MainContainer1 = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 20px;
-    padding: 0 3em;
+    padding-left: 3em;
     color: #1f1f1f;
-    text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
-    font-size: 25px;
+    font-size: 20px;
     text-align: justify;
 `
 const Container1 = styled.div`
-    display:flex;
-    flex-grow:1;
-    background-color:#eff1f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 60px;
+    padding: 60px 125px;
+`
+
+const TitulosContainer1 = styled.h1`
+    font-size: 30px;
+    color: #ED9B13;
+`
+
+const ImageContainer1 = styled.img`
+    width:500px;
+    height:auto;
+    border-radius: 30px;
 `
 
 const MainContainer = styled.main`
@@ -32,21 +46,11 @@ const MainContainer = styled.main`
     background-color: #fff;
     margin: 25px auto;
     border-radius: 30px;
-    width: 350px;
-    height: 350px;
+    font-size: 12px;
+    width: 320px;
+    height: 320px;
 `
 
-const TitulosContainer1 = styled.h1`
-    font-size: 40px;
-    /* text-shadow: 2px 2px rgba(0, 0, 0, 0.5); */
-    color: #ED9B13;
-`
-const ImageContainer1 = styled.img`
-    width:500px;
-    height:426px;
-    margin: 45px 90px;
-    background-color:#eff1f3;
-`
 const TitulosContainer = styled.div`
     font-size: 30px;
     color: #ED9B13;
@@ -59,23 +63,20 @@ const TitulosContainer = styled.div`
 const TextContainer = styled.p`
     display: flex;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 60px;
     width: 260px;
     color: #1f1f1f;
-    text-shadow: 1px 1.15px rgba(0, 0, 0, 0.3);
     margin-top: -5px;
     margin: 0px 22px;
 `
 const Textos = styled.div`
     display: flex;
     justify-content: center;
-    background-color: #eff1f3;
     text-align: center;
     font-size: 20px;
     padding: 0 60px;
     color: #1f1f1f;
-    text-shadow: 1px 1.15px rgba(0, 0, 0, 0.3);
 `
 
 const IconsContainer = styled.h1`
@@ -88,13 +89,13 @@ const IconsContainer = styled.h1`
 
 function Main() {
     return (
-        <div>
+        <Container>
             <Container1>
-            <ImageContainer1 src = {imagem} alt = "Projeto Nemias" title = "Projeto Nemias"/>
-            <MainContainer1>
-                <TitulosContainer1>Projeto Nemias</TitulosContainer1>
-                Tem como objetivo promover a assistência social, através do desenvolvimento de projetos, desportivos, culturais, artísticos e educacionais. Priorizando o atendimento de crianças, adolescentes, jovens e adultos, em vulnerabilidade social. Oferecendo acolhimento provisório e excepcional para adultos, possibilitando a reinserção no mercado de trabalho e núcleo familiar.
-            </MainContainer1>
+                <ImageContainer1 src = {imagem} alt = "Projeto Nemias" title = "Projeto Nemias"/>
+                <MainContainer1>
+                    <TitulosContainer1>Projeto Nemias</TitulosContainer1>
+                    Tem como objetivo promover a assistência social, através do desenvolvimento de projetos, desportivos, culturais, artísticos e educacionais. Priorizando o atendimento de crianças, adolescentes, jovens e adultos, em vulnerabilidade social. Oferecendo acolhimento provisório e excepcional para adultos, possibilitando a reinserção no mercado de trabalho e núcleo familiar.
+                </MainContainer1>
             </Container1>
             
             <Textos>
@@ -123,7 +124,7 @@ function Main() {
                 </TextContainer>
             </MainContainer>
             </Textos>
-        </div>
+        </Container>
     )
 }
 

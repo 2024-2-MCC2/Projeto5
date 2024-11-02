@@ -1,115 +1,114 @@
 import styled from "styled-components"
-import imagem from "../Assets/Nossa Historia.png"
+import mao from '../Assets/Mão 70.png'
 
-const Imagem = styled.img`
-  width: auto;
-  height: auto; 
+const Mao = styled.div`
+  background-image: url('${mao}');
+`
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1250px;
   margin: auto;
-  display: flex;
-  justify-content: center;
-`
-const MainTitle = styled.h2`
-  text-align:center;
-  font-weight: 700;
-  font-size: 70px;
-  color: #ED9B13;
   background-color: #fff;
-  padding: 50px;
-  margin: 0px;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 `
 
-const HistoriaContainer1 = styled.p`
+const Title = styled.h1`
+  color: #ED9B13; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  height: 500px;
-  font-size: 20px;
-  padding: 0 4em;
-  color: #fff;
-  text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
-  font-size: 25px;
-  background-color: #ED9B13;
-  margin: 0px;
+  margin-top: 80px;
 `
-const HistoriaContainer2 = styled.p`
+
+const TextContainer = styled.div`
+  max-width: 800px;
+  padding: 20px;
+  border-left: 5px solid orange;
+  border-radius: 5%;
+  position: relative;
+`
+
+const TextContainer2 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 75px;
+`
+
+const Dots = styled.p`
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  background: radial-gradient(circle, rgba(237, 155, 19, 1) 0%, rgba(237, 155, 19, 0) 100%);
+  background-clip: text; 
+  color: transparent; 
+`
+
+const DotEnd = styled.p`
+  font-size: 30px;
+  text-align: center;
+  background: radial-gradient(circle, rgba(237, 155, 19, 1) 0%, rgba(237, 155, 19, 0) 100%);
+  background-clip: text; 
+  color: transparent; 
+  margin: 15px 0 50px;  
+`
+
+
+const Text = styled.p`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: justify;
-  height: 300px;
-  font-size: 20px;
-  padding: 0 4em;
   color: #1f1f1f;
-  text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
-  font-size: 25px;
-  background-color: #fff;
-  margin: 0px;
-`
-const HistoriaContainer3 = styled.p`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: justify;
-  height: 300px;
-  font-size: 20px;
-  padding: 0 4em;
-  color: #fff;
-  text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
-  font-size: 25px;
-  background-color: #ED9B13;
-  margin: 0px;
+  padding: 0 20px;
+  font-size:17px;
+  &::before{
+    content: '➔';
+    position: absolute;
+    left: 0;
+    color: orange;
+    font-size: 1.8em;
+  }
 `
-const HistoriaContainer4 = styled.p`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  height: 300px;
-  font-size: 20px;
-  padding: 0 4em;
+
+const Text2 = styled.p`
   color: #1f1f1f;
-  text-shadow: 1px 1.2px rgba(0, 0, 0, 0.5);
-  font-size: 25px;
-  background-color: #fff;
-  margin: 0px;
+  text-align: justify;
+  font-size:17px;
 `
+
+
+
 function NossaHistoria() {
-    return (
-        <div>
-          <Imagem src={imagem}></Imagem>
-{/*           
-          <MainTitle>NOSSA HISTÓRIA</MainTitle>
-          <HistoriaContainer1>
-            O Projeto Neemias teve início em 2005, dentro da Igreja Comunhão Cristã, onde seus frequentadores, 
-            na maioria, viviam em uma situação de risco social. Com o tempo, as necessidades foram aumentando e 
-            entendemos que havia uma urgência em criar um novo ministério, focado em transformar a realidade das 
-            famílias da Igreja Comunhão Cristã, com o objetivo de formar homens e mulheres capazes de contribuir com a sociedade.
-          </HistoriaContainer1>  
-          <HistoriaContainer2>
-            Com o núcleo de movimentos sociais, a ONG conseguiu o CMDCA (Conselho Municipal dos Direitos da Criança e do Adolescente). 
-            O objetivo e ra oferecer à comunidade um projeto focado no desenvolvimento infantil e juvenil, daí surgiu o nome ONG – CENTRO 
-            DE CAPACITAÇÃO PARA A VIDA (Projeto Neemias).
-          </HistoriaContainer2>
-          <HistoriaContainer3>
-            Depois desse processo obtivemos no NCI CALBE (núcleo de convivência do idoso) que funciona desde 2014 e atende mais de 80 idosos 
-            em situação de risco, com o apoio financeiro do Governo do Estado. Apoiando crianças desde 2016, o CCPV também administra projetos 
-            com CNPJ próprio. A ONG apoia famílias da Igreja Comunhão Cristã e de outras regiões como na formação de adolescentes e na promoção 
-            de um futuro de paz, garantindo seu desenvolvimento psicossocial com o apoio de empresas parceiras. Em 2018 o Centro de Capacitação 
-            para Vida (CCPV) expandiu e obteve os alvarás e funcionamento da unidade do AME LAR, projeto voltado para reintegração familiar, 
-            com mais de 20 crianças reintegradas com sucesso ao lar familiar.
-          </HistoriaContainer3>
-          <HistoriaContainer4>
-            Hoje a organização atende mais de 1.000 pessoas por dia, proporcionando às crianças a oportunidade de serem transformadas e voltarem 
-            à sua família de origem com dignidade e cuidados, independente da situação de vulnerabilidade em que viviam.
-          </HistoriaContainer4> */}
-        </div>
-    )
+  return (
+    <Mao>
+    <Container>
+      <Title>NOSSA HISTÓRIA</Title>
+        <Dots>• • • • • • • • • • • • • • • • • • • • •</Dots>
+      <TextContainer>
+        <Text>O Projeto Neemias teve início em 2005, na Igreja Comunhão Cristã, onde os frequentadores notaram o crescente número de crianças nas ruas ao redor. Essas crianças eram vítimas de trabalho infantil e evasão escolar. Esse cenário sensibilizou os membros, que formaram o 'Ministério de Ação Social da Comunhão Cristã', com o objetivo de auxiliar não somente as crianças, mas também suas famílias.</Text>
+        <Dots>• • • • • • • • • • • • • • • • • • • • •</Dots>
+        <Text>
+          <TextContainer2>
+          <Text2>Com o crescimento dos movimentos sociais, houve a necessidade de formalizar esse trabalho, dando origem à ONG Centro de Capacitação para a Vida (Projeto Neemias).</Text2>
+          <Text2>A ONG obteve o registro no CMDCA (Conselho Municipal dos Direitos da Criança e do Adolescente) e o COMAS, e firmou seu primeiro convênio com a prefeitura de São Paulo, no programa 'Ação Família: Viver em Comunidade'.</Text2>
+          </TextContainer2>
+        </Text>
+        <Dots>• • • • • • • • • • • • • • • • • • • • •</Dots>
+        <Text>
+          <div>
+            <Text2>Depois desse processo obtivemos: • NCI CALEBE (núcleo de convivência de idosos) (encerrou em 2017) • 3 CCAs (centro da criança e do adolescente) GERAÇÃO FUTURO/ GERAÇÃO SAMUEL / JARDIM PANAMERICANO • CEDESP (Centro de Desenvolvimento Social e Produtivo) • SAICA BEITH SHALOM (Serviço de Acolhimento Institucional para Crianças e Adolescentes) (encerrou em 2021). E mais...</Text2>
+            <Text2>•NCASR ESTALAGEM (núcleo de convivência para adultos em situação de rua) que se tornou o CTA VILA MARIANA (centro temporário de acolhida) • 2 CAs (MOOCA) Refúgio I e II (centros de acolhida).</Text2>
+          </div>
+        </Text>
+        <Dots>• • • • • • • • • • • • • • • • • • • • •</Dots> 
+        <Text>Hoje, a organização atende mais de 1.000 pessoas por dia, proporcionando às crianças e adolescentes o desenvolvimento socioemocional, e, aos jovens e adultos em situação de rua, uma oportunidade de reinserção no núcleo familiar e no mercado de trabalho.</Text>
+      </TextContainer>
+      <DotEnd>• • • • • • • • • • • • • • • • • • • • •</DotEnd>
+
+    </Container>
+    </Mao>
+  )
 }
 
 export default NossaHistoria

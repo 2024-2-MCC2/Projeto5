@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import styled from "styled-components";
-import Image from "../Assets/Pattern mão-50.png"
+import Image from "../Assets/Mão 20.png"
 
 
 
@@ -17,15 +17,14 @@ const BackgroundImage = styled.div`
 
 const Container = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    gap: 2em;
+    gap: 5em;
     margin-bottom:50px;
     margin-top: 20px;
 `
 
 const ImageContainer = styled.main`
-    width: 550px;
-    height: 367px;
+    width: 450px;
+    height: auto;
     margin: 0 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
     background-color: #fff;
@@ -40,7 +39,7 @@ const ImageContainer = styled.main`
 
 const Text = styled.p`
     text-align: center;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
     color: #1f1f1f;
     margin: 10px 0;
@@ -56,7 +55,7 @@ const VerProjetos = styled.button`
     transition: all 0.3s ease;
     color: #1f1f1f;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     background-color: #fff;
     

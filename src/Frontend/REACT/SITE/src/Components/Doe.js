@@ -17,14 +17,14 @@ const DoeAgora = styled.h2`
 
 const H1 = styled.h1`
     color: #1f1f1f;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 `
 
 const Texto = styled.div`
     display: flex;
     flex-direction: column;
-    margin: auto 235px;
+    margin: auto 300px;
 `
 
 const Como = styled.h1`

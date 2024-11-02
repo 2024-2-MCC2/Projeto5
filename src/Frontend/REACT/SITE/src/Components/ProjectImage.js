@@ -5,12 +5,12 @@ const TitleContainer = styled.h1`
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 40px;
     color: #fff;
     background-color: #ED9B13;
     padding: 40px;
     margin: 0px;
-    height: 35px;    
+    height: 25px;    
     /* transform: translate(50%,-50%); */
     text-transform: uppercase;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
@@ -19,16 +19,16 @@ const TitleContainer = styled.h1`
 const PageContainer = styled.main`
     background-color:#fff;
     display: grid;
-    justify-content:space-around;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    max-width: 1300px;
+    margin: auto;
 `
 
 const ImageCard = styled.main`
     display:flex;
     flex-direction:column;
     align-items: center;
-    margin: 40px;
+    margin: 35px;
 `
 
 const StyledImage = styled.img`

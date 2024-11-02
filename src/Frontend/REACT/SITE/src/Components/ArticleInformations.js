@@ -3,9 +3,8 @@ import styled from "styled-components"
 const ArticleText = styled.article`
     background-color: #fff; 
     display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    max-width:1300px;
+    max-width:1200px;
+    margin: 15px auto;
 `
 
 const SectionText = styled.section`
@@ -14,32 +13,30 @@ const SectionText = styled.section`
     padding: 5px 10px;
 `
 
-const ArticleTexth1 = styled.h1`
-    font-size: 35px;
+const ArticleH1 = styled.h1`
+    font-size: 30px;
     color: #1f1f1f;
     text-align: center;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 `
 
-const ArticleTexth2 = styled.h2`
-    font-size: 30px;
+const ArticleH2 = styled.h2`
+    font-size: 25px;
     color: #ED9B13;
     text-align: center;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
     margin-top: -10px;
 
 `
 
-const ArticleTextP = styled.p`
+const ArticleP = styled.p`
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     padding: 0 20px;
     color: #1f1f1f;
-    text-shadow: 1px 1.15px rgba(0, 0, 0, 0.3);
-    margin-top: -5px;
-
+    padding: 5px;
+    margin-top: -7px;
 `
 
 
@@ -50,30 +47,30 @@ function ArticleInformations(){
             <ArticleText>
                 {/* Texto1 */}
                 <SectionText>
-                    <ArticleTexth1>7</ArticleTexth1>
-                    <ArticleTexth2>Projetos Sociais</ArticleTexth2>
-                    <ArticleTextP>3 Centro de Crianças e Adolescentes, 3 Centros Temporários de Acolhimento e 1 Centro de Desenvolvimento Social e Produtivo.</ArticleTextP>
+                    <ArticleH1>7</ArticleH1>
+                    <ArticleH2>Projetos Sociais</ArticleH2>
+                    <ArticleP>3 Centro de Crianças e Adolescentes, 3 Centros Temporários de Acolhimento e 1 Centro de Desenvolvimento Social e Produtivo.</ArticleP>
                 </SectionText>
 
                 {/* Texto2 */}
                 <SectionText>
-                    <ArticleTexth1>5</ArticleTexth1>
-                    <ArticleTexth2>Comunidades</ArticleTexth2>
-                    <ArticleTextP>Os Projetos estão situados na região Norte, Sul e Centro de São Paulo,nos bairros da Mooca,Pirituba,Planalto Paulista,Jaraguá e Jardim Vivian.</ArticleTextP>
+                    <ArticleH1>5</ArticleH1>
+                    <ArticleH2>Comunidades</ArticleH2>
+                    <ArticleP>Os Projetos estão situados na região Norte, Sul e Centro de São Paulo,nos bairros da Mooca,Pirituba,Planalto Paulista,Jaraguá e Jardim Vivian.</ArticleP>
                 </SectionText>
 
                  {/* Texto3 */}
                 <SectionText>
-                    <ArticleTexth1>199</ArticleTexth1>
-                    <ArticleTexth2>Colaboradores</ArticleTexth2>
-                    <ArticleTextP>A organização ainda gera centenas de empregos, prezando sempre a qualidade do atendimento prestado as comunidades.</ArticleTextP>
+                    <ArticleH1>199</ArticleH1>
+                    <ArticleH2>Colaboradores</ArticleH2>
+                    <ArticleP>A organização ainda gera centenas de empregos, prezando sempre a qualidade do atendimento prestado as comunidades.</ArticleP>
                 </SectionText>
 
                 {/* Texto4 */}
                 <SectionText>
-                    <ArticleTexth1>1220</ArticleTexth1>
-                    <ArticleTexth2>Pessoas Atendidas</ArticleTexth2>
-                    <ArticleTextP>Mais de mil pessoas, são atendidas diariamente, centenas de famílias são assistida, fazendo valer os direitos sociais.</ArticleTextP>,
+                    <ArticleH1>1220</ArticleH1>
+                    <ArticleH2>Pessoas Atendidas</ArticleH2>
+                    <ArticleP>Mais de mil pessoas, são atendidas diariamente, centenas de famílias são assistida, fazendo valer os direitos sociais.</ArticleP> 
                 </SectionText>
             </ArticleText>
         </div>

@@ -6,14 +6,14 @@ import { IoMdPerson } from "react-icons/io";
 
 
 const Contatos = styled.div`    
-  padding: 1.5rem;
+  padding: 1.5  em;
   background-color: #fff;
 `;
 
 const ContatoTitle = styled.h1`
   text-align:center;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 50px;
   color: #ED9B13;
   padding: 50px;
   margin-top: 0px;
@@ -105,19 +105,19 @@ const FormContatoContainer = styled.div`
   gap: 2.5em;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin: 65px auto 40px;
 `
 
 const TelefoneContainer = styled.a`
   color: #ED9B13;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: bold;
 `
 
 
 const EmailContainer = styled.a`
   color:#ED9B13;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: bold;
 `
 

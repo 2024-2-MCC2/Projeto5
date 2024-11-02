@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import FooterIcons from './FooterIcons'
 
 const ButtonLink = styled(Link)`
     text-decoration: none;
@@ -18,7 +19,6 @@ const FormContainer = styled.form`
     display: flex;
     justify-content: space-between;
     gap: 6em;
-    margin: 15px 50px;
 `
 
 const Buttons = styled.button`
@@ -31,7 +31,7 @@ const Buttons = styled.button`
     transition: all 0.3s ease;
     color: #1f1f1f;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     background-color: #fff;
 
     
@@ -43,10 +43,9 @@ const Buttons = styled.button`
     }
 `
 const Agora = styled.p`
-    margin-top: 30px;
     padding: auto;
     color: #1f1f1f;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-shadow: 1px 1.2px rgba(0, 0, 0, 0.3);
 `
@@ -54,8 +53,8 @@ const Apoie = styled.p`
     text-align: center;
     color: #1f1f1f;
     text-shadow: 1px 1.2px rgba(0, 0, 0, 0.3);
-    margin: 35px 0;
-    font-size: 45px;
+    margin: 0;
+    font-size: 35px;
     color: #fff;
     text-align: center;
 `
@@ -75,6 +74,7 @@ function Footer(){
                     </ButtonLink>
                 </FormContainer>
             </FooterContainer>
+            <FooterIcons/>  
         </div>
     )
 };
