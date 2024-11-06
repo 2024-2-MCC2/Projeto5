@@ -26,6 +26,7 @@ const Containerform = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  padding-top: 50px;
 `;
 
 const Map = styled.iframe`
@@ -100,6 +101,7 @@ const SubmitButton = styled.button`
     background-color: #ddd;
   }
 `;
+
 const FormContatoContainer = styled.div`
   display: flex;
   gap: 2.5em;
@@ -114,19 +116,32 @@ const TelefoneContainer = styled.a`
   font-weight: bold;
 `
 
-
 const EmailContainer = styled.a`
   color:#ED9B13;
   font-size: 20px;
   font-weight: bold;
 `
 
-
-
 const SectionTextContato = styled.p`
   display: flex;
   flex-direction: column;
   padding: 5px 10px;
+`
+
+const Junte = styled.h2`
+  display: flex;
+  justify-content: center;
+  color: #ED9B13;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  margin-bottom: 55px;
+`
+
+const JunteContainer = styled.p`
+  text-align: justify;
+  margin : 30px 300px;
+  color: #1f1f1f;
+  font-size: 20px;
 `
 // Função de manipulação de formulário
 // Impede o comportamento padrão de recarregar a página ao enviar o formulário, exibindo uma mensagem de sucesso.
@@ -135,10 +150,14 @@ function handleSubmit(event) {
   alert('Formulário enviado com sucesso!'); // Exibe uma mensagem de sucesso quando o formulário é enviado.
 }
 
+
 function Contact() {
   return (
     <Contatos>
       <ContatoTitle>Contato</ContatoTitle>
+        <Junte> Junte-se a nós na construção de um futuro melhor!</Junte>
+        <JunteContainer>Na CCPV, acreditamos que juntos podemos fazer a diferença. Sua participação é essencial para transformarmos realidades e promovermos mudanças significativas em nossa comunidade.</JunteContainer>
+        <JunteContainer>Seja como voluntário, doador ou parceiro, você pode contribuir de diversas maneiras e ser parte dessa missão. Com sua ajuda, podemos alcançar mais pessoas e gerar impactos reais. Venha fazer parte dessa causa e ajude-nos a criar um mundo mais inclusivo e solidário!</JunteContainer>
 
       <Containerform>
         <Map
@@ -179,6 +198,7 @@ function Contact() {
           <EmailContainer href="mailto:contato.ccpv@gmail.com">E-mail: contato.ccpv@gmail.com</EmailContainer>
         </SectionTextContato>
       </FormContatoContainer>
+
     </Contatos>
   );
 }

@@ -18,7 +18,8 @@ const Menu = styled(Link)`
   font-size: 18px;
   padding: 0.5em;
   position: relative;
-  color: #1f1f1f;
+  color: #ed9b13;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
@@ -29,7 +30,7 @@ const Menu = styled(Link)`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #1f1f1f; /* Use uma cor padrão */
+    background-color: #ed9b13; /* Use uma cor padrão */
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.35s ease;
@@ -55,7 +56,6 @@ function NavBar(){
             <Menu to="/sobre-nos">Sobre Nós</Menu>
             <Menu to="/projetos">Nossos Projetos</Menu>
             <Menu to="/doar">Doar</Menu>
-            <Menu to="/junte-se">Junte-se a Nós</Menu>
             <Menu to="/contato">Contato</Menu>
         </NavBarContainer>
         </div>

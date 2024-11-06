@@ -34,7 +34,7 @@ const ImageCard = styled.main`
 const StyledImage = styled.img`
     width: 520px;
     height: 320px;
-    border-radius:10%;
+    border-radius:35px;
     object-fit: cover;
     margin-bottom: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
@@ -52,7 +52,7 @@ const Button = styled.button`
     padding: 10px 20px;
     margin-top: 8px;
     border: none;
-    border-radius: 30px;
+    border-radius:35px;
     background-color: #007BFF;
     color: white;
     transition: all 0.3s ease;

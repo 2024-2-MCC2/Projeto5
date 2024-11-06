@@ -2,14 +2,18 @@ import styled from "styled-components"
 import mao from '../Assets/Mão 70.png'
 
 const Mao = styled.div`
-  background-image: url('${mao}');
+  background-image: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.8) 50%, transparent 100%),
+                    linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.8) 50%, transparent 100%),
+                    url('${mao}');
+  background-size: cover;
+  background-position: center;
 `
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1250px;
+  max-width: 1000px;
   margin: auto;
   background-color: #fff;
 `

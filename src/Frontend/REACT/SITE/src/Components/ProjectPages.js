@@ -52,14 +52,14 @@ const Image = styled.img`
   flex-shrink: 0;
   width: 400px;
   height: auto;
-  border-radius: 10px;
+  border-radius:35px;
 `;
 
 const Image2 = styled.img`
   display:flex;
   width: 500px;
   height: auto;
-  border-radius: 10px;
+  border-radius:35px;
   margin:auto;
 `
 
@@ -84,7 +84,7 @@ const SubTitle = styled.h3`
 const Button = styled.button`
     padding: 10px 20px;
     border: none;
-    border-radius: 30px;
+    border-radius:35px;
     background-color: #007BFF;
     color: white;
     transition: all 0.3s ease;

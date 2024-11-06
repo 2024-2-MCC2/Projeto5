@@ -7,6 +7,7 @@ const TitleContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 `
 
 const DoeAgora = styled.h2`
@@ -58,10 +59,10 @@ const Endereco = styled.div`
     display: flex;
     justify-content:center;
     align-items: center;
+    margin-top: 45px;
 `
 
 const EnderecoDados = styled.div`
-
 
 `
 
@@ -99,8 +100,6 @@ function Doe(){
             <EnderecoDados>
                 <Textinho>Avenida José Maria Whitaker, 2000 - Planalto Paulista</Textinho>
             </EnderecoDados>
-
-
         </Endereco>
         </>
     )

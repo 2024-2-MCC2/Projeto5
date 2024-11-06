@@ -1,18 +1,17 @@
 import Header from '../Components/Header'
 import Main from '../Components/Main';
-import ArticleInformations from '../Components/ArticleInformations';
-import Logo from '../Components/Logo';
 import Footer from '../Components/Footer';
+import ArticleInformations from '../Components/ArticleInformations';
 import ProjectImageHome from '../Components/ProjectImageHome';
 import GeracaoSamuel from '../Assets/imagem_02.png'
 import GeracaoFuturo from '../Assets/imagem_01.png'
-import FooterIcons from '../Components/FooterIcons'
+import Carrossel from '../Components/Carrossel';
 
 function Home(){
     return(
         <div>
             <Header/>
-            <Logo/>
+            <Carrossel/>
             <Main/>
             <ProjectImageHome
                 images={[

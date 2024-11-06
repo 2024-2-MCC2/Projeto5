@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components'
 import NavBar from './NavBar'
-import Logo from '../Assets/Quadrado-removebg-preview.png'
+import Logo from '../Assets/Quadrado.png'
 import { Link } from 'react-router-dom';
+
 
 const LogoLink = styled(Link)`
     text-decoration: none;

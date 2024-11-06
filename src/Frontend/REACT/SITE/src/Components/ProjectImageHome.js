@@ -8,7 +8,9 @@ const BackgroundImage = styled.div`
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    background-image: url('${Image}');
+    background-image: linear-gradient(to top, transparent 30%, rgba(239, 241, 243, 1) 100%), url('${Image}');
+    background-size: cover;
+    background-position: center;
     background-size: 2000px;
     padding: 10px;
 `
